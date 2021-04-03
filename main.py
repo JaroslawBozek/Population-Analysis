@@ -275,9 +275,7 @@ def task10(frame):
     merged['unisex'] = merged.min(axis=1)
     merged = merged.sort_values(by=['unisex'], ascending=False)
 
-    #Imie było policzone poprzez wyliczenie minimum spośród nazwanych tym imieniem mężczyzn i kobiet
-    #Przykładowo imię nadane 500M i 1000F, będzie lepiej nadawać się na imię uniseksualne niż imię
-    #nadane 50000M i 5F.
+
     print("Najpopularniejsze imie uniseksualne:", merged.index[0])
 
 def task11(frame):
